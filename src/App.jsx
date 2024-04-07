@@ -16,7 +16,7 @@ const App = () => {
   };
   const handelCurrencyType = (e) => {
     const typeCurrency = e.target.value;
-    console.log(typeCurrency);
+    // console.log(typeCurrency);
     setSelectCurrency(typeCurrency);
   };
   const fetchCurrencyInfo = async () => {
@@ -74,7 +74,7 @@ const App = () => {
       <div className="item-info">
         <div>{convertCurrency}</div>
         <div>WUC ({selectCurrency})</div>
-        <div className={isUp ? "red" : "green"}>
+        <div className={isUp ? "green" : "red"}>
           <span>{isUp ? <FaArrowTrendUp/> : <FaArrowTrendDown/>}</span>
           <span>{diff}</span>
         </div>
